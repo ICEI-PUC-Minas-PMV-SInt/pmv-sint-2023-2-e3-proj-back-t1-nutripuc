@@ -6,7 +6,7 @@
 
 `Eixo 03`
 
-Um projeto desenvolvido para auxiliar pessoas a adotarem uma nova rotina saudável. Para isso, estamos desenvolvendo um sistema beta com duas principais funcionalidades:
+Um projeto desenvolvido para auxiliar pessoas a adotarem uma nova rotina saudável. Para isso, estamos desenvolvendo um sistema beta simplificado, porém efetivo, com duas principais funcionalidades:
 
 1. Diário de alimentação,
 2. Registro de Atividade Física.
