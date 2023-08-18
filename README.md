@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# Sistema Auxiliar de Rotina Saudável (Nutripuc)
 
-`CURSO`
+`CURSO: Sistemas Para Internet`
 
-`DISCIPLINA`
+`DISCIPLINA: Projetos - Desenvolvimento Web Back-end`
 
-`SEMESTRE`
+`Eixo 03`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Um projeto desenvolvido para auxiliar pessoas a adotarem uma nova rotina saudável. Para isso, estamos desenvolvendo um sistema beta com duas principais funcionalidades:
+
+1. Diário de alimentação,
+2. Registro de Atividade Física.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+- Lucas Pedro Abreu
+- Maria Paula Mangabeira
+- Vanessa Cabelli
+- João Pedro Leite
 
 ## Orientador
 
-* Nome completo do professor 1
+- Will Ricardo dos Santos Machado
 
 ## Instruções de utilização
 
