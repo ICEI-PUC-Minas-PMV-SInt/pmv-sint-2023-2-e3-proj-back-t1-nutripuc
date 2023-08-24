@@ -2,43 +2,26 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+IMAGEM Anderson Lima
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+IMAGEM Ivan Piselli
+
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`     |PARA ... `MOTIVO/VALOR`                       |
+|--------------------|----------------------------------------|----------------------------------------------|
+| Anderson Lima      | Registrar minha alimentação            | Não esquecer de fazer nenhuma refeição       |
+| Anderson Lima      | Registrar minha prática de atividade   | Me sentir motivado ao ver regularidade       |
+| Ivan Piselli       | Manter o registro de atividade física  | Alcançar meu objetivo o de hipertrofia       |
+| Ivan Piselli       | Ter uma rotina de alimentação saudável | Me alimentar adequadamente pré e pós treinos |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -48,30 +31,30 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O sistema deve possuir um sistema de cadastro / login                                   | ALTA  | 
+|RF-002| O sistema deve possuir uma forma de recuperação de cadastro                             | BAIXA |
+|RF-003| O sistema deve possibilitar o registro de atividades físicas                            | ALTA  | 
+|RF-004| O registro de atividade física deve colher a categoria de exercício                     | MÉDIA |
+|RF-005| O registro de atividade física de colher a data e a duração                             | MÉDIA | 
+|RF-006| O registro de atividade física deve possibilitar inserir novas categorias de exercício  | BAIXA |
+|RF-007| O sistema deve possibilitar o registro de alimentação                                   | ALTA  | 
+|RF-008| O registro de alimentação deve possuir data e horário                                   | ALTA  |
+|RF-009| O registro de alimentação deve possuir categoria                                        | MÉDIA | 
+|RF-010| O registro de alimentação deve possibilitar entrar com uma imagem                       | MÉDIA |
+|RF-011| O registro de alimentação deve possibilitar marcar a refeição como "refeição do lixo"   | BAIXA | 
+|RF-012| O sistema deve possuir funcionalidade de notificação para realizar refeição e exercício | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O aplicativo deverá ser responsivo e se adaptar entre mobile (até 512 pixels) e web (acima de 512 pixels)  | ALTA | 
+|RNF-002| A sincronização de dados entre os usuários deve ser de, no máximo, 60 segundos |  MÉDIA | 
+|RNF-003| O sistema deve possuir uma interface de fácil compreensão, intuitiva, não necessitando um treinamento ou manual para sua utilização, de forma a atingir um Customer Effort Score entre 0 e 4 | BAIXA | 
+|RNF-004| O sistema deverá possuir um NPS (Net Promoter Score) entre 75 e 100, considerado excelente, até alcançar seu milésimo cliente |  BAIXA | 
+|RNF-005| O usuário não deve navegar mais de três vezes para acessar todas as funcionalidades que o sistema oferece | MÉDIA | 
+|RNF-006| O sistema deve respeitar as demandas da LGPD | MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -79,14 +62,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 04/12/2023 |
+|02| O aplicativo deve se restringir às tecnologias C# no Back-end |
+|03| A equipe não pode subcontratar o desenvolvimento do trabalho  |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
