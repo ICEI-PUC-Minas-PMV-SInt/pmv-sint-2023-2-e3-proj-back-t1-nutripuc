@@ -6,7 +6,7 @@ A cada dia que passa, a conscientização acerca da importância de um estilo de
 
 E é isso que nos aponta a pesquisa realizada pelo IBGE no ano de 2019, um a cada quatro adultos no país sofrem de obesidade. Houve um aumento significativo na porcentagem de excesso de peso, que em 2002/2003 era de 43,3% e no ano da pesquisa já chegava em 61,7%. A pesquisa apontou também que o percentual de pessoas obesas em idade adulta no país mais do que dobrou em 17 anos, como mostra o gráfico apresentado por eles:
 
-> ![image](https://user-images.githubusercontent.com/67482340/222280716-20a3217e-a061-43a6-8b3f-10b7163d7e30.png)
+> ![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/1.IMAGEM.png?raw=true)
 
 Modificar comportamentos não é tarefa fácil, mesmo quando necessário. Abrir mão de velhos hábitos para adquirir novos pode ser desafiador e demorado. Isso acontece, pois, um aumento no conhecimento não se transforma, necessariamente, em um aumento de atitudes e ações concretas com base nesse conhecimento.
 
@@ -14,7 +14,7 @@ Como exemplo, na década de 90, houve uma campanha nos Estados Unidos da Améric
 
 Contudo, o número de pessoas que efetivamente consumiam 5 porções se manteve inalterado ao longo do tempo em 11% da população. Dados esses baseados nas pesquisas “5 a day for better health program evaluation report”, elaborado pelo NCI (Instituto Nacional de Câncer dos EUA) e no artigo “Have Americans Increased Their Fruit and Vegetable Intake? The trands between 1988 and 2002”, publicado no NLM (repositório online da biblioteca nacional de medicina norte americana).
 
-> ![image](https://user-images.githubusercontent.com/67482340/222280891-9147756c-4067-4e63-bbd8-eceeddedd8ca.png)
+> ![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/2.IMAGEM.png?raw=true)
 
 Além do exemplo dado acima, vemos que o problema da falha humana em não conseguir transformar conhecimento em aplicabilidade, acontece em diversas conjunturas.
 
