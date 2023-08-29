@@ -14,9 +14,9 @@ Um projeto desenvolvido para auxiliar pessoas a adotarem uma nova rotina saudáv
 ## Integrantes
 
 - Lucas Pedro Abreu
-- Maria Paula Mangabeira
-- Vanessa Cabelli
 - João Pedro Leite
+- John Torres do Vale
+- Maria Paula Mangabeira
 
 ## Orientador
 
