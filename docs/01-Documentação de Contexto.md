@@ -49,10 +49,10 @@ O objetivo principal do nosso sistema é auxiliar pessoas a desenvolverem hábit
 
 Objetivos específicos:
 
-• Permitir que o usuário registre suas refeições em um diário alimentar;
-• Permitir o registro de atividade física diária;
-• Recompensar o registro ininterrupto de atividade física ao longo de uma semana;
-• Facilitar o acompanhamento com uma UI/UX simples e agradável;
+- Permitir que o usuário registre suas refeições em um diário alimentar;
+- Permitir o registro de atividade física diária;
+- Recompensar o registro ininterrupto de atividade física ao longo de uma semana;
+- Facilitar o acompanhamento com uma UI/UX simples e agradável;
 
 ## Justificativa
 
