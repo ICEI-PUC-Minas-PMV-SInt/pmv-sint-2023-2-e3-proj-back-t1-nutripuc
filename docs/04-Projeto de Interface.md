@@ -11,7 +11,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
- ![image]()
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/NOVO-Fluxo-de-telas.png?raw=true)
 
 ## Wireframes
 
@@ -27,7 +27,7 @@ Essa tela é formada por três componentes principais:
 -	Componente de texto resume o que a aplicação oferece;
 -	Componente de link de signup que dá acesso à página de cadastro
 
-![image]()
+![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/LOGIN.png?raw=true)
 
 
 Tela – Signup (Cadastro)
@@ -39,7 +39,7 @@ Essa tela é composta por três componentes principais:
 -	Componente de botão de signup que finaliza o cadastro;
 -	Componente de link de login que retorna à página principal.
 
-![image]()
+![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/SIGNUP.png?raw=true)
 
 
 Tela – Dashboard
@@ -53,7 +53,7 @@ Essa tela é composta por oito componentes principais:
 -	Componente de card de Diário de Alimentação que encaminha o usuário para a tela desta funcionalidade.
 -	Componente de card de Registro de Atividade Física que encaminha o usuário para a tela desta funcionalidade.
 
-![image]()
+![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/DASHBOARD.png?raw=true)
 
 
 Tela – Registro de Atividades Físicas
@@ -65,7 +65,7 @@ Essa tela é formada por dois componentes:
 -	Componente Tabela de Registros de Atividades Físicas - Exibe o histórico das atividades contendo as colunas “Atividade”, “Data”, “Horário” e “Status”;
 -	Componente Formulário de Nova Atividade Física - Adiciona uma nova atividade à tabela Registro de Atividades Físicas. Contém um formulário para preenchimento das informações “Atividade”, “Data” e “Horário”, que são adicionadas à tabela ao clicar em “Adicionar Atividade Física”.
 
-![image]()
+![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/ATIVIDADE%20F%C3%8DSICA.png?raw=true)
 
 
 Tela – Diário de Alimentação
@@ -78,7 +78,7 @@ Essa tela é composta por três componentes principais:
 -	Componente de botão de adicionar refeição abre o modal para registro;
 -	Componente de registro de refeição é um modal que permite ao usuário selecionar o tipo de refeição e entrar com um texto descritivo do que ingeriu.
 
-![image]()
+![image](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/DI%C3%81RIO%20DE%20ALIMENTA%C3%87%C3%83O.png?raw=true)
 
 
 
