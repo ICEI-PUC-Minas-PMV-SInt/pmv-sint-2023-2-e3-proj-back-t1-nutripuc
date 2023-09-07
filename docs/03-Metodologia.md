@@ -6,8 +6,18 @@ Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Defini�
 
 ## Relação de Ambientes de Trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso.
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito está apresentada na tabela detalhada, abaixo:
+ 
+
+| AMBIENTE | PLATAFORMA    | LINK                       |
+|--------------------|----------------------------------------|----------------------------------------------|
+| Projeto de Interface (Wireframes)  | Figma           | https://www.figma.com/file/sodoSf9kQMtUsctcWVza1E/NUTRIPUC-2.0-WIREFRAME?type=whiteboard&node-id=549-1516&t=ZU6oToMsxezIbYpC-0    |
+| Projeto de Interface (UserFlow)   | Figma           | https://www.figma.com/file/7d9twyDUqOWNfuoYmlOhvu/Userflow?type=whiteboard&node-id=0-1&t=uQdhHWlJSwYa81nm-0      |
+| Arquitetura da Solução     | Figma           |https://www.figma.com/file/ANVFM6HVsYZfzN798TKnkc/arquitetura-da-solu%C3%A7%C3%A3o?type=design&node-id=0-1&mode=design&t=4dQEEdKvb1BYtXDR-0       |
+| Diagrama de Classe     |  Lucid Chart App  | https://lucid.app/lucidchart/14570a15-b029-4abb-b0ae-6531244ef26e/edit?viewport_loc=941%2C-617%2C2742%2C1317%2C0_0&invitationId=inv_ad5ac0b1-d2cb-4684-a829-3ca07b985b15       |
+| Diagrama de Uso de Caso    |  Lucid Chart App  | https://lucid.app/lucidchart/14570a15-b029-4abb-b0ae-6531244ef26e/edit?viewport_loc=941%2C-617%2C2742%2C1317%2C0_0&invitationId=inv_ad5ac0b1-d2cb-4684-a829-3ca07b985b15       |
+| Comunicação  |  Microsoft Teams |  https://sgapucminasbr.sharepoint.com/sites/team_sga_2441_2023_2_8785101-Time1-Qualidadedevida    |
+| Repositório de código fonte    | Git & GitHub | https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/tree/main |
 
 ## Controle de Versão
 
