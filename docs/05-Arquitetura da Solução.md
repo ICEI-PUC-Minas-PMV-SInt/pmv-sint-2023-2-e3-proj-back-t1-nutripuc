@@ -4,15 +4,13 @@
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![Arquitetura da Solução](img/arch-back.JPG)
+![Arquitetura da Solução](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/05-01-arquitetura-da-solucao.png?raw=true)
 
 ## Diagrama de Classes
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> ![Diagramas de Classes](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/05-01-diagrama-de-classes.png?raw=true)
+> ![Diagramas de Classes](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/blob/main/docs/img/05-02-diagrama-de-classes.png?raw=true)
 
 ## Modelo ER
 
