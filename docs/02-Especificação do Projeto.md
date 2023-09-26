@@ -18,6 +18,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|----------------------------------------|----------------------------------------------|
 | Anderson Lima      | Registrar minha alimentação            | Não esquecer de fazer nenhuma refeição       |
 | Anderson Lima      | Registrar minha prática de atividade   | Me sentir motivado ao ver regularidade       |
+| Anderson Lima      | Entrar com uma imagem da sua refeição  |Analisar não só a quantidade de alimentos mas também a variedade e qualidade dos ingredientes escolhidos      |
+| Anderson Lima      | Marcar a refeição como "refeição do lixo"   | Aproveitar uma refeição livre por semana para comer algo muito desejado, um pouco mais calórico e com perfil mais rico em gordura ou açúcar  |
+| Ivan Piselli       | Receber uma notificação para realizar refeição e exercício | Ser lembrado de fazer determinada refeição e se sentir mais comprometido com a meta diária de exercício. |
 | Ivan Piselli       | Manter o registro de atividade física  | Alcançar meu objetivo o de hipertrofia       |
 | Ivan Piselli       | Ter uma rotina de alimentação saudável | Me alimentar adequadamente pré e pós treinos |
 
