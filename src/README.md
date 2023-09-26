@@ -14,4 +14,4 @@ O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em 
 
 <!-- Código para teste de git -->
 
-<b>Teste da branch dev!</b>
+
