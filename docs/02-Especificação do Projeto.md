@@ -23,6 +23,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Ivan Piselli       | Receber uma notificação para realizar refeição e exercício | Ser lembrado de fazer determinada refeição e se sentir mais comprometido com a meta diária de exercício. |
 | Ivan Piselli       | Manter o registro de atividade física  | Alcançar meu objetivo o de hipertrofia       |
 | Ivan Piselli       | Ter uma rotina de alimentação saudável | Me alimentar adequadamente pré e pós treinos |
+| Ivan Piselli       | Entrar com uma imagem de seu progresso físico | Acompanhar a sua evolução |
+
 
 
 
