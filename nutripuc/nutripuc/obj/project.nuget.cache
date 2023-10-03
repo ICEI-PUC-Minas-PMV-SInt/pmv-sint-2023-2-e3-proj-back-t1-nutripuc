@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MsjHq1jG67MR0a4167B2p8CvMLGryVFeokhNgS4S37yPF3amOfqNfu+kd7KLjXECAmRb9qcaeTQtc0zNs3EMDw==",
+  "success": true,
+  "projectFilePath": "C:\\c-workspace\\educational\\puc-minas\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\nutripuc\\nutripuc\\nutripuc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+  ],
+  "logs": []
+}
