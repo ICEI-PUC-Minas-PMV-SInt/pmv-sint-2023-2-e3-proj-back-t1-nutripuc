@@ -22,7 +22,39 @@ namespace nutripuc.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("nutripuc.Models.User", b =>
+            modelBuilder.Entity("nutripuc.Models.Registro", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AlimentacaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AtividadeFisicaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataDoRegistro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("IdDoUsuario")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("UrlDaImagem")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlimentacaoId");
+
+                    b.HasIndex("AtividadeFisicaId");
+
+                    b.HasIndex("IdDoUsuario");
+
+                    b.ToTable("Registros");
+                });
+
+            modelBuilder.Entity("nutripuc.Models.Usuario", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,15 +62,106 @@ namespace nutripuc.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("nutripuc.Models.Alimentacao", b =>
+                {
+                    b.HasBaseType("nutripuc.Models.Registro");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("RefeicaoDoLixo")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("TipoDeRefeicao")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("horario")
+                        .HasColumnType("datetime2");
+
+                    b.ToTable("Alimentacao", (string)null);
+                });
+
+            modelBuilder.Entity("nutripuc.Models.AtividadeFisica", b =>
+                {
+                    b.HasBaseType("nutripuc.Models.Registro");
+
+                    b.Property<string>("CategoriaDaAtividade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Intensidade")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observacao")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("TituloDaAtividade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("AtividadeFisica", (string)null);
+                });
+
+            modelBuilder.Entity("nutripuc.Models.Registro", b =>
+                {
+                    b.HasOne("nutripuc.Models.Alimentacao", "Alimentacao")
+                        .WithMany()
+                        .HasForeignKey("AlimentacaoId");
+
+                    b.HasOne("nutripuc.Models.AtividadeFisica", "AtividadeFisica")
+                        .WithMany()
+                        .HasForeignKey("AtividadeFisicaId");
+
+                    b.HasOne("nutripuc.Models.Usuario", "Usuario")
+                        .WithMany("Registros")
+                        .HasForeignKey("IdDoUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Alimentacao");
+
+                    b.Navigation("AtividadeFisica");
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("nutripuc.Models.Alimentacao", b =>
+                {
+                    b.HasOne("nutripuc.Models.Registro", null)
+                        .WithOne()
+                        .HasForeignKey("nutripuc.Models.Alimentacao", "Id")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("nutripuc.Models.AtividadeFisica", b =>
+                {
+                    b.HasOne("nutripuc.Models.Registro", null)
+                        .WithOne()
+                        .HasForeignKey("nutripuc.Models.AtividadeFisica", "Id")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("nutripuc.Models.Usuario", b =>
+                {
+                    b.Navigation("Registros");
                 });
 #pragma warning restore 612, 618
         }
