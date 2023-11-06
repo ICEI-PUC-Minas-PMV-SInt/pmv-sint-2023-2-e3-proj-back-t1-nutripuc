@@ -1,38 +1,95 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authorization;
 using nutripuc.Models;
 
-[Route("registros")]
-public class RegistrosController : Controller
+namespace nutripuc.Controllers
 {
-    private readonly AppDbContext _context;
-    public RegistrosController(AppDbContext context)
+    [Route("registros")]
+    public class RegistrosController : Controller
     {
-        _context = context;
-    }
+        private readonly AppDbContext _context;
+        public RegistrosController(AppDbContext context)
+        {
+            _context = context;
+        }
 
-    [HttpGet("atividades")]
-    public async Task<ActionResult> AtividadesFisicas()
-    {
-        var atividadesFisicas = await _context.Registros
-            .Include(r => r.AtividadeFisica)
-            .Where(r => r.AtividadeFisica != null)
-            .Select(r => r.AtividadeFisica)
-            .ToListAsync();
+        [HttpGet("atividades")]
+        public async Task<IActionResult> AtividadesFisicas()
+        {
+            var atividadesFisicas = await _context.Registros
+                .Include(r => r.AtividadeFisica)
+                .Where(r => r.AtividadeFisica != null)
+                .Select(r => r.AtividadeFisica)
+                .ToListAsync();
 
-        return View(atividadesFisicas);
-    }
+            return View(atividadesFisicas);
+        }
 
-    [HttpGet("refeicoes")]
-    public async Task<ActionResult> Refeicoes()
-    {
-        var refeicoes = await _context.Registros
-            .Include(r => r.Alimentacao)
-            .Where(r => r.Alimentacao != null)
-            .Select(r => r.Alimentacao)
-            .ToListAsync();
+        [HttpGet("atividades/criar")]
+        public IActionResult CriarAtividadeFisica()
+        {
+            return View("CriarAtividadeFisica");
+        } 
 
-        return View(refeicoes);
+
+        [HttpPost("atividades/criar")]
+        public async Task<IActionResult> CriarAtividadeFisica([FromBody] AtividadeFisica atividadeFisica)
+        {
+            // Etapa 1: Validar Modelo
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Etapa 2: Preparar Registro (Campos não existentes no formulário)
+            atividadeFisica.Id = Guid.NewGuid(); // Gerar um novo Guid
+            atividadeFisica.DataDoRegistro = DateTime.UtcNow; // Definir a data e hora atuais
+            atividadeFisica.IdDoUsuario = new Guid();
+
+            // Etapa 3: Salvar Registro
+            _context.Add(atividadeFisica);
+            await _context.SaveChangesAsync();
+
+            // return CreatedAtAction(nameof(AtividadesFisicas), new { id = atividadeFisica.Id }, atividadeFisica);
+            return RedirectToAction("AtividadesFisicas");
+        }
+
+        [HttpGet("refeicoes")]
+        public async Task<IActionResult> Refeicoes()
+        {
+            var refeicoes = await _context.Registros
+                .Include(r => r.Alimentacao)
+                .Where(r => r.Alimentacao != null)
+                .Select(r => r.Alimentacao)
+                .ToListAsync();
+
+            return View(refeicoes);
+        }
+
+        [HttpGet("refeicoes/criar")]
+        public IActionResult CriarRefeicao()
+        {
+            return View("CriarRefeicao");
+        }
+
+        [HttpPost("refeicoes")]
+        public async Task<IActionResult> CriarRefeicao([FromBody] Alimentacao alimentacao)
+        {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Etapa 2: Preparar Registro (Campos não existentes no formulário)
+            alimentacao.Id = new Guid();
+            alimentacao.DataDoRegistro = DateTime.UtcNow;
+            alimentacao.IdDoUsuario = new Guid();
+
+            // Etapa 3: Salvar Registro
+            _context.Add(alimentacao);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Refeicoes");
+        }
     }
 }

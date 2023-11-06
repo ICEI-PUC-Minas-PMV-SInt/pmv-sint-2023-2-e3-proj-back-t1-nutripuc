@@ -10,11 +10,14 @@ namespace nutripuc.Models
         public Guid Id { get; set; }
 
         [Required]
+        [Display(Name = "Data do Registro")]
         public DateTime DataDoRegistro { get; set; } = DateTime.Now;
 
+        [Display(Name = "URL da Imagem")]
         public string UrlDaImagem { get; set; }
 
         [Required]
+        [Display(Name = "Id do Usuário")]
         public Guid IdDoUsuario { get; set; }
 
         // Propriedade de Navegação

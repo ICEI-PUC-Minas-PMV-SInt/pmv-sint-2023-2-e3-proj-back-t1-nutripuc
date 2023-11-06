@@ -28,6 +28,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXEF0aXZpZGFkZXNGaXNpY2FzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/c-workspace/educational/puc-minas/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/nutripuc/nutripuc/Views/Registros/CriarAtividadeFisica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXENyaWFyQXRpdmlkYWRlRmlzaWNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c-workspace/educational/puc-minas/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/nutripuc/nutripuc/Views/Registros/CriarRefeicao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXENyaWFyUmVmZWljYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/c-workspace/educational/puc-minas/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/nutripuc/nutripuc/Views/Registros/Refeicoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXFJlZmVpY29lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
