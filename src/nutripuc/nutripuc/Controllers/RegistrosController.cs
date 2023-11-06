@@ -33,7 +33,7 @@ namespace nutripuc.Controllers
 
 
         [HttpPost("atividades/criar")]
-        public async Task<IActionResult> CriarAtividadeFisica([FromBody] AtividadeFisica atividadeFisica)
+        public async Task<IActionResult> CriarAtividadeFisica([FromForm] AtividadeFisica atividadeFisica)
         {
             // Etapa 1: Validar Modelo
             if (!ModelState.IsValid)
