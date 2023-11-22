@@ -6,7 +6,7 @@ namespace nutripuc.Models
     [Table("Usuarios")]
     public class Usuario
     {
-        [Key, Required]
+        [Key]
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Email válido é obrigatório")]
@@ -18,6 +18,12 @@ namespace nutripuc.Models
         // Propriedade de Navegação
         public ICollection<Registro> Registros { get; set; }
 
+        public Perfil Perfil { get; set; }
     }
 
+    public enum Perfil
+    {
+        admin,
+        user
+    }
 }

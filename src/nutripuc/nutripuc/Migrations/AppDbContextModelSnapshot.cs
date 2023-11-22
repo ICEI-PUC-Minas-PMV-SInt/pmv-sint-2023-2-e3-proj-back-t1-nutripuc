@@ -64,6 +64,9 @@ namespace nutripuc.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("Perfil")
+                        .HasColumnType("int");
+
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

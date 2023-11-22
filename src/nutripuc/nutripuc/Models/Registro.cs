@@ -25,8 +25,8 @@ namespace nutripuc.Models
         public Usuario Usuario { get; set; }
 
         // Propriedade de Navegação
-        public AtividadeFisica? AtividadeFisica { get; set; }
-        public Alimentacao? Alimentacao { get; set; }
+        public AtividadeFisica AtividadeFisica { get; set; }
+        public Alimentacao Alimentacao { get; set; }
 
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c-workspace\\educational\\puc-minas\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj": {}
+    "D:\\puc-projetos\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj": {}
   },
   "projects": {
-    "C:\\c-workspace\\educational\\puc-minas\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj": {
+    "D:\\puc-projetos\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c-workspace\\educational\\puc-minas\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj",
+        "projectUniqueName": "D:\\puc-projetos\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj",
         "projectName": "nutripuc",
-        "projectPath": "C:\\c-workspace\\educational\\puc-minas\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj",
-        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\c-workspace\\educational\\puc-minas\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\obj\\",
+        "projectPath": "D:\\puc-projetos\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\nutripuc.csproj",
+        "packagesPath": "C:\\Users\\johnt\\.nuget\\packages\\",
+        "outputPath": "D:\\puc-projetos\\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\\src\\nutripuc\\nutripuc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\johnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,6 +74,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x86",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -82,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
