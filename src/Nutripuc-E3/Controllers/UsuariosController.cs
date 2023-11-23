@@ -40,7 +40,7 @@ namespace Nutripuc_E3.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Login(Usuario usuario)
         {
-            Usuario user = await _context.Usuarios.FirstOrDefaultAsync(user => user.Email == usuario.Email);
+            Usuario user = await _context.Usuarios.FirstOrDefaultAsync(userDB => userDB.Email == usuario.Email);
 
             if (user == null)
             {
@@ -54,13 +54,13 @@ namespace Nutripuc_E3.Controllers
             {
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Email, usuario.Email),
-                    new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Role, usuario.Perfil.ToString())
+                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim(ClaimTypes.Role, user.Perfil.ToString())
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "Login");
-                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+                ClaimsPrincipal principal = new (usuarioIdentity);
 
                 var props = new AuthenticationProperties
                 {
