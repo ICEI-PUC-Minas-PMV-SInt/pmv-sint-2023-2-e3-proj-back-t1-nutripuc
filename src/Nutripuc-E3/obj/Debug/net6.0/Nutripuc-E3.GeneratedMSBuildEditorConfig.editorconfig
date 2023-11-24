@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Nutripuc_E3
+build_property.RootNamespace = Nutripuc_E3
+build_property.ProjectDir = D:\puc-projetos\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\src\Nutripuc-E3\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\puc-projetos\pmv-sint-2023-2-e3-proj-back-t1-nutripuc\src\Nutripuc-E3
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAlimentacao/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBbGltZW50YWNhb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAlimentacao/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBbGltZW50YWNhb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAlimentacao/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBbGltZW50YWNhb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAlimentacao/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBbGltZW50YWNhb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAlimentacao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBbGltZW50YWNhb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAtividadesFisicas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBdGl2aWRhZGVzRmlzaWNhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAtividadesFisicas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBdGl2aWRhZGVzRmlzaWNhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAtividadesFisicas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBdGl2aWRhZGVzRmlzaWNhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAtividadesFisicas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBdGl2aWRhZGVzRmlzaWNhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/RegistrosDeAtividadesFisicas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zRGVBdGl2aWRhZGVzRmlzaWNhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Registros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Registros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Registros/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Registros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Registros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Usuarios/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Usuarios/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/puc-projetos/pmv-sint-2023-2-e3-proj-back-t1-nutripuc/src/Nutripuc-E3/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-er1iyidhex

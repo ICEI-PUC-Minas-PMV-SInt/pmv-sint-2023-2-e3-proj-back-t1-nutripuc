@@ -1,0 +1,53 @@
+﻿@model nutripuc.Models.AtividadeFisica
+
+@{
+    ViewData["Title"] = "Criar Atividade Fisica";
+}
+
+<h1>CriarAtividadeFisica</h1>
+
+<h4>AtividadeFisica</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CriarAtividadeFisica" asp-controller="Registros" method="POST" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TituloDaAtividade" class="control-label"></label>
+                <input asp-for="TituloDaAtividade" class="form-control" />
+                <span asp-validation-for="TituloDaAtividade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoriaDaAtividade" class="control-label"></label>
+                <input asp-for="CategoriaDaAtividade" class="form-control" />
+                <span asp-validation-for="CategoriaDaAtividade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intensidade" class="control-label"></label>
+                <input asp-for="Intensidade" class="form-control" />
+                <span asp-validation-for="Intensidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observacao" class="control-label"></label>
+                <input asp-for="Observacao" class="form-control" />
+                <span asp-validation-for="Observacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrlDaImagem" class="control-label"></label>
+                <input asp-for="UrlDaImagem" class="form-control" />
+                <span asp-validation-for="UrlDaImagem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

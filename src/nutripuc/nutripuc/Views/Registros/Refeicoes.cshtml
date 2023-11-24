@@ -1,0 +1,71 @@
+﻿@model IEnumerable<nutripuc.Models.Alimentacao>
+
+@{
+    ViewData["Title"] = "Refeicoes";
+}
+
+<h1>Refeicoes</h1>
+
+<p>
+    <a asp-action="CriarRefeicao">Criar novo Registro de Alimentação</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoDeRefeicao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.horario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RefeicaoDoLixo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataDoRegistro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UrlDaImagem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoDeRefeicao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.horario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RefeicaoDoLixo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataDoRegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UrlDaImagem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.Email)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
