@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Nutripuc_E3.Models;
 
@@ -11,9 +12,10 @@ using Nutripuc_E3.Models;
 namespace Nutripuc_E3.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231123232524_M03-Add-Registros-and-context")]
+    partial class M03AddRegistrosandcontext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -100,9 +102,8 @@ namespace Nutripuc_E3.Migrations
                 {
                     b.HasBaseType("Nutripuc_E3.Models.Registro");
 
-                    b.Property<string>("CategoriaDaAtividade")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CategoriaDaAtividade")
+                        .HasColumnType("int");
 
                     b.Property<int>("Intensidade")
                         .HasColumnType("int");

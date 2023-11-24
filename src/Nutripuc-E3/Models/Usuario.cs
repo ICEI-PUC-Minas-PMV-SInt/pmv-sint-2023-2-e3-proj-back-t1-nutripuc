@@ -18,6 +18,9 @@ namespace Nutripuc_E3.Models
         public string Senha { get; set; }
 
         public Perfil Perfil { get; set; }
+
+        // Propriedade de navegação
+        public ICollection<Registro> Registros { get; set; }
     }
 
     public enum Perfil {
