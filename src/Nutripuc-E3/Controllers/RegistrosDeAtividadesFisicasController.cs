@@ -9,6 +9,7 @@ using Nutripuc_E3.Models;
 
 namespace Nutripuc_E3.Controllers
 {
+    [Route("registros")]
     public class RegistrosDeAtividadesFisicasController : Controller
     {
         private readonly AppDbContext _context;
@@ -19,6 +20,7 @@ namespace Nutripuc_E3.Controllers
         }
 
         // GET: RegistrosDeAtividadesFisicas
+        [HttpGet("atividadefisica")]
         public async Task<IActionResult> Index()
         {
             var appDbContext = _context.RegistrosDeAtividadeFisica.Include(a => a.Usuario);
@@ -26,6 +28,7 @@ namespace Nutripuc_E3.Controllers
         }
 
         // GET: RegistrosDeAtividadesFisicas/Details/5
+        [HttpGet("atividadefisica/details")]
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.RegistrosDeAtividadeFisica == null)
@@ -45,6 +48,7 @@ namespace Nutripuc_E3.Controllers
         }
 
         // GET: RegistrosDeAtividadesFisicas/Create
+        [HttpGet("atividadesfisicas/create")]
         public IActionResult Create()
         {
             ViewData["IdDoUsuario"] = new SelectList(_context.Usuarios, "Id", "Email");
@@ -54,7 +58,7 @@ namespace Nutripuc_E3.Controllers
         // POST: RegistrosDeAtividadesFisicas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("atividadesfisicas/create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("TituloDoRegistro,CategoriaDaAtividade,Intensidade,Observacao,Id,DataDoRegistro,IdDoUsuario")] AtividadeFisica atividadeFisica)
         {
@@ -70,6 +74,7 @@ namespace Nutripuc_E3.Controllers
         }
 
         // GET: RegistrosDeAtividadesFisicas/Edit/5
+        [HttpGet("atividadesfisicas/edit")]
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _context.RegistrosDeAtividadeFisica == null)
@@ -89,7 +94,7 @@ namespace Nutripuc_E3.Controllers
         // POST: RegistrosDeAtividadesFisicas/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("atividadesfisicas/edit")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("TituloDoRegistro,CategoriaDaAtividade,Intensidade,Observacao,Id,DataDoRegistro,IdDoUsuario")] AtividadeFisica atividadeFisica)
         {
@@ -123,6 +128,7 @@ namespace Nutripuc_E3.Controllers
         }
 
         // GET: RegistrosDeAtividadesFisicas/Delete/5
+        [HttpGet("atividadesfisicas/delete")]
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.RegistrosDeAtividadeFisica == null)
@@ -142,7 +148,7 @@ namespace Nutripuc_E3.Controllers
         }
 
         // POST: RegistrosDeAtividadesFisicas/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost("atividadesfisicas/delete"), ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {

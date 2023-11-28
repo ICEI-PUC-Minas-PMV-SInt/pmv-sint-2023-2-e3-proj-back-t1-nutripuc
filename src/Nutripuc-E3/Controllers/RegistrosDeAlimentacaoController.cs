@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -58,15 +59,17 @@ namespace Nutripuc_E3.Controllers
         // POST: RegistrosDeAlimentacao/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost("alimentacao")]
+        [HttpPost("alimentacao/create")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TipoDeRefeicao,Descricao,Horario,RefeicaoDoLixo, Id")] Alimentacao alimentacao)
+        public async Task<IActionResult> Create([Bind("TipoDeRefeicao,Descricao,Horario,RefeicaoDoLixo,Id,DataDoRegistro,IdDoUsuario")] Alimentacao alimentacao)
         {
             if (ModelState.IsValid)
             {
-                var loggedEmail = HttpContext.User.Identities.First().Claims.ToList()[1].ToString();
+                var loggedUserEmail = HttpContext.User.FindFirst(ClaimTypes.Email).Value;
+                alimentacao.IdDoUsuario = _context.Usuarios.FirstOrDefault(a => a.Email == loggedUserEmail).Id;
+
                 alimentacao.Id = Guid.NewGuid();
-                alimentacao.IdDoUsuario = _context.Usuarios.FirstOrDefault(a => a.Email == loggedEmail).Id;
+
                 _context.Add(alimentacao);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
