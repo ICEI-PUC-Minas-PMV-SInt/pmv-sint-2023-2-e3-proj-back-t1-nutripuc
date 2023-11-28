@@ -42,6 +42,12 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapControllerRoute(name: "Alimentacao",
+                pattern: "registros/{controller=RegistrosDeAlimentacao}/{action=Index}/{id?}",
+                defaults: new { controller = "RegistrosDeAlimentacao", action = "Index" });
+app.MapControllerRoute(name: "AtividadeFisica",
+                pattern: "registros/{controller=RegistrosDeAtividadesFisicas}/{action=Index}/{id?}",
+                defaults: new { controller = "RegistrosDeAtividadesFisicas", action = "Index" });
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
